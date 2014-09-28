@@ -43,7 +43,7 @@ body {
 
 // END OF DEFAULTS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-.desktop, .large-desktop, .ipad, .ipad-portrait, .ipad-landscape, .smartphone {
+.desktop, .large-desktop, .ipad, .ipad-portrait, .ipad-landscape, .smartphone, .iphone {
   .disabled();
 }
 
@@ -106,7 +106,7 @@ and (orientation : portrait) {
 }
 
 /* Desktops and laptops ----------- */
-@media screen, all
+@media only screen
 and (min-width : 1224px) {
   /* Styles */
 
@@ -116,7 +116,7 @@ and (min-width : 1224px) {
   }
 
   .desktop {
-    .enabled();
+   .enabled();
   }
 
 }
@@ -139,6 +139,10 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
   /* Styles */
+
+  .iphone{
+    .enabled();
+  }
 }
 
 
