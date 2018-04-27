@@ -1,9 +1,9 @@
 media-query-hacking
 ===================
 
-You know when you offshore your simple web development work? The basic HTML layout and CSS...
+With added flexbox
 
-Then you have to rewrite literally everything because they used dreamweaver and changed the _actual_ bootstrap.css file - no overriding styles in additional stylesheets, not the actual bootstrap.css file - so there is no chance that you could ever maintain it in the future?
+There used to be a rant about offshoring simple web development here ... but those guys were doing the best they could do. We should never have been so naive as to think you could simply send an outline spec offshore.
 
 That's why ...
 
