@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet/less" type="text/css" href="css/flex.less" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+  <title>Flex App</title>
+</head>
+
+<body>
+  <div class="reveal">This is the big reveal</div>
+  <div class="wrapper flex-container flex-column full-height">
+    <nav class='top-nav'>THIS IS THE TOP NAV</nav>
+    <div class="flex-container flex-item flex-responsive">
+      <article class="main flex-item">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+          feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+          mi vitae est. Mauris placerat eleifend leo.</p>
+      </article>
+      <aside class="flex-item side-bar side-bar-left">
+        <p>Side bar left</p>
+        <button class="toggle-parent-collapsed-button">Toggle</button>
+      </aside>
+      <aside class="flex-item side-bar side-bar-right">Aside 2
+          <button class="toggle-parent-collapsed-button">Toggle</button>
+      </aside>
+    </div>
+    <footer class="footer">Footer</footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.toggle-parent-collapsed-button').click(function () {
+        var $parent = $(this).parent('.side-bar');
+        $parent = $('.side-bar');
+        $parent.toggleClass("collapsed");
+      });
+    });
+  </script>
+
+</body>
+
+</html>
