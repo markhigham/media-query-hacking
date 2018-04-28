@@ -1,0 +1,77 @@
+
+/*
+    this is just to show where stuff is.
+*/
+@line-height: 26px;
+
+.app-menu-trigger {
+  position: absolute;
+  width: 64px;
+  background-color: cornflowerblue;
+}
+
+@media (min-width: 720px) {
+  .app-menu-trigger {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: @line-height;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-sidebar {
+  background-color: #0e4aa3;
+  color: white;
+  a {
+    color: white;
+  }
+
+  //   transition: all 0.2s ease-in-out;
+  overflow: hidden;
+
+  white-space: nowrap;
+}
+
+.app-wrapper {
+  background-color: white;
+}
+
+.app-header {
+  background-color: #182c4c;
+  color: white;
+  text-align: center;
+  line-height: @line-height * 2;
+  height: @line-height * 2;
+}
+
+.app-footer {
+  line-height: @line-height * 2;
+  height: @line-height * 2;
+  font-size: 80%;
+  color: white;
+  background-color: #069b7e;
+}
+
+.icon-nav {
+  ul {
+    li {
+      a {
+        display: block;
+        padding: 0;
+        height: @line-height * 2;
+        line-height: @line-height * 2;
+
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+  }
+}

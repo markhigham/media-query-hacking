@@ -1,0 +1,23 @@
+{
+  "name": "media-query-hacking",
+  "version": "1.0.0",
+  "description": "media-query-hacking ===================",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markhigham/media-query-hacking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markhigham/media-query-hacking/issues"
+  },
+  "homepage": "https://github.com/markhigham/media-query-hacking#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
