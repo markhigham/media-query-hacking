@@ -4,8 +4,8 @@
   "description": "media-query-hacking ===================",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server 'public' --files 'public'"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/markhigham/media-query-hacking#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "browser-sync": "^2.26.3"
   }
 }
