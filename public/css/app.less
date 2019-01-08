@@ -1,5 +1,5 @@
 @sidebar-width: 80%;
-@sidebar-width-fixed: 200px;
+@sidebar-width-fixed: 180px;
 @sidebar-width-icon: 64px;
 
 .app-wrapper {
@@ -31,6 +31,12 @@
   height: 0;
 }
 
+.app-menu-trigger {
+  position: absolute;
+  width: 64px;
+  background-color: cornflowerblue;
+}
+
 .app-sidebar-mobile {
   .app-sidebar {
     display: block;
@@ -39,6 +45,12 @@
     left: 0;
     height: 100vh;
     width: @sidebar-width;
+  }
+
+  .app-menu-trigger {
+    .content {
+      transform: rotate(90deg);
+    }
   }
 
   .app-sidebar-modal {
@@ -57,7 +69,13 @@
   }
 }
 
+
+
 @media (min-width: 720px) {
+  .app-menu-trigger {
+    display: none;
+  }
+
   .app-sidebar-mobile,
   .app-sidebar-fixed,
   .app-sidebar-icon {
